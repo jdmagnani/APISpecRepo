@@ -696,7 +696,6 @@ components:
             wrapped: true
           items:
             $ref: "#/components/schemas/Address"
-          x-faker: null
     Address:
       type: object
       properties:
@@ -790,7 +789,7 @@ components:
           x-faker: datatype.alpha
         category:
           $ref: "#/components/schemas/Category"
-          x-faker: null
+          
         photoUrls:
           type: array
           xml:
@@ -799,14 +798,14 @@ components:
             type: string
             xml:
               name: photoUrl
-          x-faker: null
+          
         tags:
           type: array
           xml:
             wrapped: true
           items:
             $ref: "#/components/schemas/Tag"
-          x-faker: null
+          
         status:
           type: string
           description: pet status in the store
